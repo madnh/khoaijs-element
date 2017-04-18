@@ -1,19 +1,18 @@
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
-        var module = factory();
+        define(["require"], function (require) {
+            var module = factory();
 
-        if (require.specified('khoaijs')) {
-            require(['khoaijs'], function (Khoai) {
-                Khoai.Element = module;
-            });
-        }
-        if (root.Khoai) {
-            root.Khoai.Element = module;
-        }
+            if (require.specified('khoaijs')) {
+                require(['khoaijs'], function (Khoai) {
+                    Khoai.Element = module;
+                });
+            }
 
-        root.Element = module;
+            root.Element = module;
 
-        return module;
+            return module;
+        });
     } else {
         var module = factory();
 
