@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   ],
   "author": "MaDnh <dodanhmanh@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/madnh/khoaijs-flag",
+  "homepage": "https://github.com/madnh/khoaijs-element",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
