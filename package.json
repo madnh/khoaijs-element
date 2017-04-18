@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/madnh/khoaijs-flag.git"
+    "url": "https://github.com/madnh/khoaijs-element.git"
   },
   "keywords": [
     "KhoaiJS",
-    "KhoaiJS-Flag"
+    "KhoaiJS Element"
   ],
   "author": "MaDnh <dodanhmanh@gmail.com>",
   "license": "MIT",
