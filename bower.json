@@ -1,0 +1,21 @@
+{
+  "name": "khoaijs-flag",
+  "description": "Simple Flag",
+  "main": "flag.js",
+  "authors": [
+    "MaDnh <dodanhmanh@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/madnh",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "chai": "^3.5.0",
+    "expect.js": "^0.3.1"
+  }
+}
