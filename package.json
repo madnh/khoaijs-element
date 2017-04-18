@@ -1,8 +1,8 @@
 {
-  "name": "khoaijs-flag",
+  "name": "khoaijs-element",
   "version": "0.0.1",
-  "description": "Simple Flag",
-  "main": "flag.js",
+  "description": "Simple DOM element util functions",
+  "main": "element.js",
   "directories": {
     "doc": "docs"
   },
