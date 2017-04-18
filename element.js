@@ -1,10 +1,27 @@
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
-        define(['khoaijs'], function (Khoai) {
-            Khoai.Element = factory();
-        });
+        var module = factory();
+
+        if (require.specified('khoaijs')) {
+            require(['khoaijs'], function (Khoai) {
+                Khoai.Element = module;
+            });
+        }
+        if (root.Khoai) {
+            root.Khoai.Element = module;
+        }
+
+        root.Element = module;
+
+        return module;
     } else {
-        root.Khoai.Element = factory();
+        var module = factory();
+
+        if (root.Khoai) {
+            root.Khoai.Element = module;
+        }
+
+        root.Element = module;
     }
 }(this, function () {
     "use strict";
